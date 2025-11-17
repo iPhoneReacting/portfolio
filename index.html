@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---------Header------->
+<header>
+    <img src="logo.png" alt="logo site">
+    <p>PARADOX APPS</p>
+    <i class="fa-solid fa-bars"></i>
+    <!--------Navigation Menu -->
+    <nav class="main-nav" id="mainNav">
+   <ul>
+       <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+       <li><a href="about.html"><i class="fa-solid fa-user"></i><span>About</span></a></li>
+    <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i><span>Projects</span></a></li>
+  <li><a href="blogs.html"><i class="fa-solid fa-pen-nib"></i><span>Blogs</span></a></li>
+  <li><a href="contact.html"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
+  <li><a href="login.html"><i class="fa-solid fa-gear"></i><span>Admin</span></a></li>
+       </ul>
+    </nav>
+    <div class="menu-overlay" id="menuOverlay"></div>
+</header>
+<!-----------section hero---->
+<section class="hero">
+    <div>
+  <img src="hero.png">
+    </div>
+    <div>
+  <p><b style="color:#FCA351; font-size:24px;">Hi,</b>  i am paradox apps <br> full-stack web developer</p><br>
+  <button onclick="window.location.href='contact.html'"><i class="fa-solid fa-envelope"></i>text me</button>
+    </div>
+</section>
+<!----------carousel------->
+<div class="slider">
+    <div class="left">
+  <img src="quick1.png" class="active">
+  <img src="quick2.png">
+  <img src="quick3.png">
+    </div>
+    <div class="right" >
+        <p class="active"><b>Problem Slover</b><br> "Creative problem solver with strong skills in web development <br>Experienced in analyzing challenges, finding efficient solutions."</p>
+   <p><b>Ui/Ux Designer</b><br>"passionate about creating intuitive interfaces and seamless user experiences that combine functionality with aesthetic design."</p>
+  <p><b>Full-Stack Web Dev</b><br> "skilled in building dynamic and responsive websites, handling both front-end and back-end development with modern technologies."</p>
+    </div>
+</div>
+<!----------Featured------->
+<div class="featured">
+ <div class="description">
+  <p><b><br>Featured Projects</b><br> selection of my best web development projects, showcasing creativity, functionality, and clean design</p>
+ </div>
+ <div class="cards">
+     <div class="image-container">
+ <img src="feature1.jpg">
+ <div class="overlay">
+   <img src="featuredLogo1.png" class="logoWebsite">
+   <p>Bicycling Club</p>
+   <button onclick="window.location.href='bicyclingClub.html'">visit website</button>
+ </div>
+     </div>
+     <div class="image-container">
+ <img src="feature2.jpeg">
+ <div class="overlay">
+   <img src="logoFeature2.png" class="logoWebsite">
+   <p>UAE | CAPITAL</p>
+   <button>visit website</button>
+ </div>
+     </div>
+     <div class="image-container">
+ <img src="feature3.jpg">
+ <div class="overlay">
+   <img src="logoFeature3.png" class="logoWebsite">
+   <p>Jakarta Combined</p>
+   <button>visit website</button>
+ </div>
+     </div>
+     <div class="image-container">
+ <img src="feature4.jpeg">
+ <div class="overlay">
+   <img src="logoFeatured4.png" class="logoWebsite">
+   <p>SUccessful SChool</p>
+   <button>visit website</button>
+ </div>
+     </div>
+ </div>
+</div>
+<!-------Latest Blog----->
+<section class="latest-blog">
+    <p><b>Latest Blog</b><br><br>Discover my latest articles and insights about web development, design, and creative tips to help you build better projects</p>
+    <div class="blog-container">
+        <div class="blog-card">
+   <img src="blog1.jpeg">
+   <div class="blog-content">
+     <h3>VIP Coding: The Concierge Model for Elite Software Development</h3>
+     <p>An exploration of the VIP coding model, which provides exclusive, senior-level developer teams and a white-glove project management experience.</p>
+     <a href="vipeCodding.html">Read More -></a>
+   </div>
+        </div>
+        <div class="blog-card">
+   <img src="blog2.jpeg">
+   <div class="blog-content">
+     <h3>How I Built My Portfolio</h3>
+     <p>A quick overview of the tools and design process I used to create my personal portfolio.</p>
+     <a href="#">Read More -></a>
+   </div>
+        </div>
+        <div class="blog-card">
+   <img src="blog3.png">
+   <div class="blog-content">
+     <h3>Essential VS Code Extensions for 2024</h3>
+     <p>A curated list of must-have Visual Studio Code extensions to boost productivity, enhance code quality, and streamline your workflow.</p>
+     <a href="#">Read More -></a>
+   </div>
+        </div>
+    </div>
+</section>
+<!-----------Contact Me----->
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Looking for a professional website or custom design? Let’s discuss your ideas — fill out the form below and I’ll get back to you soon!</p>
+    <form class="contact-form" action="contact.html" method="GET">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>  
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+</section>
+<!---------Footer------->
+<footer>
+    <div class="footer-links">
+ <a href="#">Privacy Policy</a>
+ <a href="#">Terms of Use</a>
+ <a href="login.html">Admin Panel</a>
+    </div>
+    <div class="footer-social">
+ <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-copy">
+ ©2025 Paradox Apps . All right reserved.
+    </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

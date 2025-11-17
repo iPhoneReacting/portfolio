@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <p>PARADOX Admin</p>
+    </div>
+    <i class="fa-solid fa-bars"></i>
+</header>
+
+<!-- ===== Sidebar ===== -->
+<nav class="sidebar">
+    <ul>
+        <li class="active" data-section="dashboard"><i class="fa-solid fa-gauge"></i> Dashboard</li>
+        <li data-section="projects"><i class="fa-solid fa-briefcase"></i> Projects</li>
+        <li data-section="blogs"><i class="fa-solid fa-pen-nib"></i> Blogs</li>
+        <li data-section="messages"><i class="fa-solid fa-envelope"></i> Messages</li>
+        <li data-section="settings"><i class="fa-solid fa-gear"></i> Settings</li>
+    </ul>
+</nav>
+
+<!-- ===== Main Content ===== -->
+<main>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="active-section">
+        <h2>Dashboard</h2>
+        <div class="stats">
+            <div class="card">
+                <h3>Projects</h3>
+                <p>9</p>
+            </div>
+            <div class="card">
+                <h3>Blogs</h3>
+                <p>12</p>
+            </div>
+            <div class="card">
+                <h3>Messages</h3>
+                <p>5</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Manage Projects</h2>
+        <button class="add-btn" id="addProjectBtn"><i class="fa-solid fa-plus"></i> Add Project</button>
+        <div class="project-cards" id="projectsContainer">
+            <!-- بطاقة مشروع مثال -->
+            <div class="card">
+                <img src="project7.jpeg" alt="Project 1">
+     <h3>Travel Agency</h3>
+                <p>Short description of project one.</p>
+                <div class="buttons">
+                    <button title="Preview"><i class="fa-solid fa-eye"></i></button>
+                    <button title="Source Code"><i class="fa-solid fa-code"></i></button>
+                    <button class="deleteProject" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="feature4.jpeg" alt="Project 1">
+     <h3>Education Platform</h3>
+                <p>Short description of project one.</p>
+                <div class="buttons">
+                    <button title="Preview"><i class="fa-solid fa-eye"></i></button>
+                    <button title="Source Code"><i class="fa-solid fa-code"></i></button>
+                    <button class="deleteProject" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="project6.jpeg" alt="Project 1">
+     <h3>Health App UI</h3>
+                <p>Short description of project one.</p>
+                <div class="buttons">
+                    <button title="Preview"><i class="fa-solid fa-eye"></i></button>
+                    <button title="Source Code"><i class="fa-solid fa-code"></i></button>
+                    <button class="deleteProject" title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs">
+        <h2>Manage Blogs</h2>
+        <button class="add-btn" id="addBlogBtn"><i class="fa-solid fa-plus"></i> Add Blog</button>
+        <div class="blog-cards" id="blogsContainer">
+            <div class="card">
+                <h3>Essential VS Code Extensions for 2024</h3>
+                <p>Short excerpt of blog one...</p>
+                <div class="buttons">
+                    <button title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+             <div class="blog-cards" id="blogsContainer">
+            <div class="card">
+                <h3>vipe codding</h3>
+                <p>Short excerpt of blog one...</p>
+                <div class="buttons">
+                    <button title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+         <div class="blog-cards" id="blogsContainer">
+            <div class="card">
+                <h3>JavaScript mester</h3>
+                <p>Short excerpt of blog one...</p>
+                <div class="buttons">
+                    <button title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+         <div class="blog-cards" id="blogsContainer">
+            <div class="card">
+                <h3>How Create Portfolio</h3>
+                <p>Short excerpt of blog one...</p>
+                <div class="buttons">
+                    <button title="Edit"><i class="fa-solid fa-pen"></i></button>
+                    <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>        
+    </section>
+
+    <!-- Messages Section -->
+    <section id="messages">
+        <h2>Contact Messages</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>karmim tarek</td>
+                        <td>paradox@mail.com</td>
+                        <td>Hello there!</td>
+                        <td>2025-11-12</td>
+                        <td>
+                            <button title="Read"><i class="fa-solid fa-eye"></i></button>
+<button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>sameh riath</td>
+                        <td>ahmed@gmail.com</td>
+                        <td>Hi, need help.</td>
+                        <td>2025-11-11</td>
+                        <td>
+                            <button title="Read"><i class="fa-solid fa-eye"></i></button>
+                            <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>monaco ricardo</td>
+                        <td>imadEdiin@gmail.com</td>
+                        <td>Hello are you okey !</td>
+                        <td>2025-10-09</td>
+                        <td>
+                            <button title="Read"><i class="fa-solid fa-eye"></i></button>
+                            <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>issam bn</td>
+                        <td>jomia1235@mail.co.dz</td>
+                        <td>salam alikom</td>
+                        <td>2025-10-01</td>
+                        <td>
+                            <button title="Read"><i class="fa-solid fa-eye"></i></button>
+                            <button title="Delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section id="settings">
+        <h2>Settings</h2>
+        <form>
+            <label>Site Name:</label>
+            <input type="text" value="Paradox Apps">
+
+            <label>Email:</label>
+            <input type="email" value="contact@paradox.com">
+
+            <label>Password:</label>
+            <input type="password" placeholder="New Password">
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- Project Modal -->
+<div class="modal" id="modalProject">
+    <div class="modal-content">
+        <h3>Add Project</h3>
+        <label>Project Image:</label>
+<input type="file" id="projectImage" accept="image/*">
+        <label>Title:</label>
+        <input type="text" id="projectTitle">
+        <label>Description:</label>
+        <textarea id="projectDesc"></textarea>
+        <label>Preview URL:</label>
+        <input type="text" id="projectPreview">
+        <label>Source URL:</label>
+        <input type="text" id="projectSource">
+        <button id="saveProject">Save Project</button>
+        <button class="closeModal">Cancel</button>
+    </div>
+</div>
+
+<!-- Blog Modal -->
+<div class="modal" id="modalBlog">
+    <div class="modal-content">
+        <h3>Add Blog</h3>
+        <label>Title:</label>
+        <input type="file" id="projectImage" accept="image/*">
+        <input type="text" id="blogTitle">
+        <label>Content:</label>
+        <textarea id="blogContent"></textarea>
+        <label>Category:</label>
+        <select id="blogCategory">
+            <option>Technology</option>
+            <option>Programming</option>
+            <option>UI/UX</option>
+            <option>Web Tips</option>
+        </select>
+        <button id="saveBlog">Save Blog</button>
+        <button class="closeModal">Cancel</button>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
