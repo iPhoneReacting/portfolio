@@ -503,21 +503,24 @@ body, html{
 
   .hero button {
     width: 80%;
-    height: 35px;
+    height: 50px;
     font-size: 0.9rem;
   }
 
   .right p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 
   .blog-content h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .footer-social a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
+ .image-container{
+  height:200px;
+ }
 }
 
 @media (max-width: 992px) {
@@ -559,6 +562,7 @@ body, html{
 
   .cards {
     width: 85%;
+   height:200px;
   }
 
   .image-container img {
